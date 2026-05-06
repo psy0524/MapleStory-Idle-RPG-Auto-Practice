@@ -17,7 +17,7 @@
 
 | 목적 | 도구 |
 |------|------|
-| 모바일 UI 자동화 | Appium 2.x + Python |
+| 모바일 UI 자동화 | Appium 3.3.1 + Python |
 | 화면 이미지 검증 | OpenCV |
 | 성능 측정 | Android adb |
 | 테스트 프레임워크 | pytest |
@@ -82,8 +82,11 @@ pip install -r requirements.txt
 ### 2. 환경변수 설정
 `.env.example` 을 복사해서 `.env` 파일 생성 후 본인 기기 정보 입력:
 ```bash
-DEVICE_NAME=YOUR_DEVICE_ID       # adb devices 로 확인
-PLATFORM_VERSION=YOUR_ANDROID_VERSION
+DEVICE_NAME=스마트폰 시리얼 번호      # adb devices 로 확인
+PLATFORM_VERSION= 현재 스마트폰 안드로이드 OS 버전
+
+APP_PACKAGE= 앱 패키지명
+APP_ACTIVITY= 앱 액티비티 명
 ```
 
 ### 3. Appium 서버 실행
