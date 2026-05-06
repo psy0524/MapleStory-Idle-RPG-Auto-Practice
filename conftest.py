@@ -11,8 +11,8 @@ def driver():
     options.device_name = DEVICE_CONFIG["deviceName"]
     options.app_package = DEVICE_CONFIG["appPackage"]
     options.app_activity = DEVICE_CONFIG["appActivity"]
-    options.no_reset = DEVICE_CONFIG["noReset"]
-    options.auto_grant_permissions = DEVICE_CONFIG["autoGrantPermissions"]
+    options.no_reset = True
+    options.auto_launch = False   # ← 앱 자동 실행 안 함!
 
     driver = webdriver.Remote(APPIUM_SERVER, options=options)
     yield driver
