@@ -1,0 +1,4 @@
+appium-python-client
+pytest
+allure-pytest
+opencv-python
